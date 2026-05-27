@@ -1,16 +1,45 @@
-# React + Vite
+# English Vocabulary Quiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Интерактивное веб-приложение для изучения английской лексики и грамматики с русскоязычным интерфейсом. Проект превращает учебный словарь в практику: пользователь выбирает тему, направление перевода и режим проверки, а затем повторяет ошибки.
 
-Currently, two official plugins are available:
+## Возможности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Квиз с вариантами ответа или вводом перевода вручную.
+- Направления перевода `EN -> RU` и `RU -> EN`.
+- Раунды на 10, 15, 20 или 30 слов с отображением прогресса и результата.
+- Повтор только ошибочных ответов после завершения раунда.
+- Карточки для самостоятельного повторения слов и фраз.
+- Поиск и фильтрация слов по урокам и категориям.
+- Раздел грамматики с правилами, примерами и интерактивными заданиями.
 
-## React Compiler
+## Технологии
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 8
+- Tailwind CSS 4
+- shadcn/Radix UI components
+- Lucide React icons
 
-## Expanding the ESLint configuration
+## Запуск локально
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Для production-сборки:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Структура
+
+- `src/App.jsx` - словарь, грамматические темы и вся логика тренировки.
+- `src/components/ui/` - переиспользуемые UI-компоненты.
+- `src/index.css` - базовые стили приложения.
+
+## Область проекта
+
+Это клиентское учебное приложение: словарь и упражнения встроены во frontend. Проект не использует учетные записи, серверное хранение прогресса или внешние API.
